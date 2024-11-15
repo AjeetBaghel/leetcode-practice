@@ -5,6 +5,7 @@ public class LCTwoSum {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int arr[] = {0,1,2,3,4,5};
+        int ans[] =new int[2];
         int target =4;
        // HashMap<Integer,Integer> mp = new HashMap<>();
 //
@@ -27,10 +28,10 @@ public class LCTwoSum {
 //        for(Integer k:st){
 //            System.out.print("Keys ="+k+" values ="+mp.get(k)+" ,");
 //        }
-        for(int i =0;i<arr.length;i++){
-            for (int j = i+1; j <arr.length; j++) {
+        for(int i =0;i<2;i++){
+            for (int j = i+1; j <2; j++) {
                  if(arr[i]+arr[j]==target){
-                     System.out.print(i+" "+ j);
+                    ans= System.out.print(ans[i]+" "+ ans[j]);
                      break;
                  }
             }
